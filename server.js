@@ -124,6 +124,7 @@ app.post('/v1/chat/completions', async (req, res) => {
       
       let buffer = '';
       let reasoningStarted = false;
+
       
       response.data.on('data', (chunk) => {
         buffer += chunk.toString();
